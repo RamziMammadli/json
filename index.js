@@ -1772,3 +1772,90 @@ let arr = [
   },
 ];
 
+
+// console.log('ARRAY', arr);
+
+// let sortedData = arr.sort((a, b) => b.price - a.price)
+
+// console.log("Sorted Data", sortedData);
+
+
+// let abc = [1, 5, 8, 10]
+// abc.push('asd')
+// console.log('abc',abc)
+
+
+
+
+
+
+
+
+
+// let filteredData = arr.filter(x => x.category == "beauty");
+
+// console.log(filteredData);
+
+// 1-- [12,45,23,54,86,235,86,90] arrayinda cut ededleri tapin
+
+let a = [12,45,23,54,86,235,86,90]
+
+console.log(   a.filter(item => item%2 == 0)   );
+
+
+// 2-- [12,45,23,54,86,235,86,90] azdan coxa cesidleyin
+
+let b = [12,45,23,54,86,235,86,90]
+
+console.log(  b.sort((a,b) => a - b  ));
+
+
+// 3-- [] arrayi qiymete gore cesidleyin
+
+console.log(  arr.sort((a,b) => a.price - b.price)   );
+
+
+// 4-- [12,45,23,54,86,235,86,90] arrayda her reqemi ozune vurun
+
+let c = [12,45,23,54,86,235,86,90]
+
+console.log(   c.map(item => item * item)   );
+
+
+// [alma, banan, armud] arrayinda alma olub olmadigini yoxlayin
+
+let d = ["alma", "banan", "armud"]
+
+console.log(d.includes('alma'));
+
+
+// [60, 85, 95, 75] arrayinda her kes 50ni kecibmi yoxla
+
+let f =[60, 85, 95, 75]
+
+console.log(   f.every(item => item > 50)   );
+
+
+// [12, 11, 54, 86, 97, 99] cut sayi var mi yoxlayin
+
+let g = [12, 11, 54, 86, 97, 99]
+
+console.log(    g.some(item => item % 2 == 0)    );
+
+
+// [] id-si 4 olan obyekti tapin
+
+console.log(    arr.find(item => item.id == 5)    );
+
+
+// [] categorysi beauty olanlari tapin
+
+console.log(   arr.filter(item => item.category == "beauty")   );
+
+
+// [18, 25, 16, 24, 15, 30] yasi 20den yuxari olanlar yazdirilsin
+
+let yaslar = [18, 25, 16, 24, 15, 30]
+
+console.log(   yaslar.filter(yas => yas > 20)   );
+
